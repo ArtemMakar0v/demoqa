@@ -1,4 +1,4 @@
-package demoqa.com.tests;
+package demoqa.com.tests.UI;
 
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserType;

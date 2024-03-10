@@ -1,4 +1,4 @@
-package demoqa.com.tests;
+package demoqa.com.tests.UI;
 
 import demoqa.com.pages.LoginPage;
 import demoqa.com.utils.TestData;
