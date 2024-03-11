@@ -7,14 +7,14 @@ import com.microsoft.playwright.APIRequestContext;
 import com.microsoft.playwright.APIResponse;
 import com.microsoft.playwright.Playwright;
 import com.microsoft.playwright.options.RequestOptions;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 
-
-public class APITest {
+public class GetCallTest {
     Playwright playwright;
     APIRequest request;
     APIRequestContext apiRequestContext;
@@ -24,6 +24,11 @@ public class APITest {
         playwright = Playwright.create();
         request = playwright.request();
         apiRequestContext = request.newContext();
+    }
+
+    @AfterEach
+    void tearDown(){
+        playwright.close();
     }
 
     @Test
